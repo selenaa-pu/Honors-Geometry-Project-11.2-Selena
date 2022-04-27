@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warm-Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Dosis&family=Rubik:wght@300&display=swap');
+    </style>
+</head>
+<body>
+
+   <div id="sidenav">
+       <nav>
+           <ul>
+               <li style="margin-top:80px;"><a href="index.html">Home</a></li>
+               <li class="active">Warm-Up</li>
+               <li><a href="lesson.html">Lesson</a></li>
+               <li><a href="homework.html">Homework</a></li>
+               <li><a href="https://docs.google.com/presentation/d/1AVPQ7B4PFokIDsV73AGiM-7OmI8xwUC00mEwKP8ORW4/edit?usp=sharing" target="_blank">Slideshow</a></li>
+           </ul>
+       </nav>
+   </div>
+   <div id="menu-btn">
+        <img src="menu.png" id="menu">
+   </div>
+
+   <script>
+       var menuBtn = document.getElementById("menu-btn")
+       var sidenav = document.getElementById("sidenav")
+       var menu = document.getElementById("menu")
+
+       sidenav.style.right = "-250px";
+
+       menuBtn.onclick = function(){
+           if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "close.png";
+           }
+           else{
+               sidenav.style.right = "-250px";
+               menu.src = "menu.png";
+           }
+       }
+   </script>
+
+    <h1>Warm-Up</h1>
+    <p style="text-align:center;margin-top:50px;">Solve for the area of ΔABC given that the perimeter of ΔABC is 9+3√3.</p>
+    <div class="center">
+        <img src="warmup.png" style="height:450px;width:580px;">
+    </div>
+
+    <h6 style="margin-bottom:100px;"> </h6>
+
+</body>
+</html>

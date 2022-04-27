@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson</title>
+<link rel="stylesheet" type="text/css" href="style.css" />  
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Dosis:wght@300&family=Rubik:wght@300&display=swap');
+ </style>
+</head>
+<body>
+
+   <div id="sidenav">
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="warmup.html">Warm-Up</a></li>
+              <li class="active">Lesson</li>
+              <li><a href="homework.html">Homework</a></li>
+              <li><a href="https://docs.google.com/presentation/d/1AVPQ7B4PFokIDsV73AGiM-7OmI8xwUC00mEwKP8ORW4/edit?usp=sharing" target="_blank">Slideshow</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
+<div id="menu-btn">
+     <img src="menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menu-btn")
+    var sidenav = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    sidenav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+             sidenav.style.right = "0";
+             menu.src = "close.png";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            menu.src = "menu.png";
+        }
+    }
+</script>
+
+    <h1>Lesson</h1>
+    <!--<div class="header">
+       <p>text</p>
+    </div>-->
+    <img src="parallelogram.png" style="height:400px;width:220px;float:right;margin-bottom:50px;margin-right:275px;margin-top:50px;">
+    <h2>Area of a Parallelogram</h2>
+    <p>Without using the formula listed in Theorem 100, you can find the area of a <br>given parallelogram using the "cut-and-paste" method.<br><br>The area of a parallelogram is the same as a rectangle with the same height/altitude and base/width!</p>
+    <div class="theorem">
+       <h3>Theorem 100: A = bh</h3>
+    </div>
+    <p>The area of a parallelogram can be found using the formula A = bh. <br><br>A refers to the area, b to the length of the base, and h to the height of the parallelogram.<br>(Area = base multipled by height)</p>
+
+    <div class="lower">
+      <h2>Area of a Triangle</h2>
+    </div>
+    <img src="triangles.png" style="float:right;height:325px;width:365px;margin-right:280px;">
+    <p>The area of all triangles can be shown as ½ of the area of any parallelogram that has the same base and height. <br><br>The area of a parallelogram is the length of its base to its height. <br><br>Each parallelogram as 2 identical triangles put together. Since these 2 triangles are identical, they will <br>have the same area, so each triangle will have half the area of the parallelogram.</p>
+    <div class="theorem">
+       <h3>Theorem 101: A = ½bh</h3>
+    </div>
+    <p>The area of a triangle can be found by the formula A= ½ bh.<br><br> A refers to the area, b to the length of the base, and h to the height of the triangle.<br>(Area = base multiplied by height, then divided by 2)</p>
+    <br><br>
+    <h3>Find the examples on the slideshow!</h3>
+
+    <br><br>
+    <h6 style="margin-bottom:150px;"> </h6>
+
+
+</body>
+</html>
